@@ -79,3 +79,24 @@ class Animal {
 
 let dog = new Animal("Dog");
 dog.speak();
+
+// step 11: demonstrate class inheritance
+class Dog extends Animal {
+    constructor(name: string) {
+        super(name);
+    }
+    speak() {
+        console.log(`${this.name} barks.`);
+    }   
+}
+
+let myDog = new Dog("Rex");
+myDog.speak();
+
+// step 12: demonstrate generics
+function identity<T>(arg: T): T {
+    return arg;
+}
+console.log(identity<string>("Generic String"));
+console.log(identity<number>(12345));
+console.log(identity<boolean>(true));
