@@ -115,3 +115,8 @@ console.log(`Color: ${Color[c]}`);
 let tuple: [string, number];
 tuple = ["Age", 30];
 console.log(`Tuple: ${tuple[0]} is ${tuple[1]}`);
+
+// step 15: demonstrate type assertion
+let someValue: any = "This is a string";
+let strLength: number = (someValue as string).length;
+console.log(`String Length: ${strLength}`);
