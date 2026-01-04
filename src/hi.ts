@@ -120,3 +120,15 @@ console.log(`Tuple: ${tuple[0]} is ${tuple[1]}`);
 let someValue: any = "This is a string";
 let strLength: number = (someValue as string).length;
 console.log(`String Length: ${strLength}`);
+
+// step 16: demonstrate optional parameters
+function greet(name: string, greeting?: string) {
+    if (greeting) {
+        console.log(`${greeting}, ${name}!`);
+    } else {
+        console.log(`Hello, ${name}!`);
+    }
+}
+
+greet("Alice");
+greet("Bob", "Good morning");
