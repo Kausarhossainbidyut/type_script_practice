@@ -1,0 +1,48 @@
+"use strict";
+// steap 1: write TypeScript code
+const hi = "Hello, TypeScript!";
+console.log(hi);
+// step 2: demonstrate union types in variables
+let player;
+player = "Captain";
+player = 23;
+console.log(`Player: ${player}`);
+// step 3: demonstrate a simple function
+function multipla(a, b) {
+    return a * b;
+}
+console.log(`Multipla: ${multipla(4, 5)}`);
+// step 4: demonstrate a typed function
+function multiplaTyped(a, b) {
+    return a * b;
+}
+console.log(`Multipla Typed: ${multiplaTyped(6, 7)}`);
+// step 5: demonstrate array with union types
+let fruit = ["Apple", "Banana", "Orange"];
+fruit.push("Mango");
+fruit.push(99); // This will cause a TypeScript error
+console.log(fruit);
+// step 6: correct array with union types
+let mixedArray = [];
+mixedArray.push("Hello");
+mixedArray.push(42);
+console.log(mixedArray);
+// step 7: demonstrate object type
+let person = {
+    name: "Alice",
+    age: 30
+};
+console.log(person);
+// step 8: demonstrate typed object
+let typedPerson = {
+    name: "Bob",
+    age: 25
+};
+console.log(typedPerson);
+let myCar = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2020
+};
+console.log(myCar);
+//# sourceMappingURL=hi.js.map
