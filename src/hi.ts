@@ -110,3 +110,8 @@ enum Color {
 
 let c: Color = Color.Green;
 console.log(`Color: ${Color[c]}`);
+
+// step 14: demonstrate tuple
+let tuple: [string, number];
+tuple = ["Age", 30];
+console.log(`Tuple: ${tuple[0]} is ${tuple[1]}`);
