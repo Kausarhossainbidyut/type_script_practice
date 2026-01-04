@@ -100,3 +100,13 @@ function identity<T>(arg: T): T {
 console.log(identity<string>("Generic String"));
 console.log(identity<number>(12345));
 console.log(identity<boolean>(true));
+
+// step 13: demonstrate enum
+enum Color {
+    Red,
+    Green,  
+    Blue
+}
+
+let c: Color = Color.Green;
+console.log(`Color: ${Color[c]}`);
