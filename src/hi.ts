@@ -153,3 +153,16 @@ console.log(`Sample: ${sample}`);
 sample = 100;
 console.log(`Sample: ${sample}`);
 
+// step 20: demonstrate intersection types
+interface Person {
+    name: string;
+}
+interface Employee {
+    employeeId: number;
+}
+type Staff = Person & Employee;
+let staffMember: Staff = {
+    name: "Charlie",
+    employeeId: 1234
+};
+console.log(staffMember);
