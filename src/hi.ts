@@ -132,3 +132,9 @@ function greet(name: string, greeting?: string) {
 
 greet("Alice");
 greet("Bob", "Good morning");
+
+// step 17: demonstrate null and undefined types
+let u: undefined = undefined;
+let n: null = null;
+
+console.log(`Undefined: ${u}, Null: ${n}`);
