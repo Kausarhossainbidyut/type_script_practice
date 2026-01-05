@@ -138,3 +138,18 @@ let u: undefined = undefined;
 let n: null = null;
 
 console.log(`Undefined: ${u}, Null: ${n}`);
+
+// step 18: demonstrate never type
+function error(message: string): never {
+    throw new Error(message);
+}
+// error("This is a never type example."); // Uncommenting this line will throw an error
+
+// step 19: demonstrate type aliases
+type StringOrNumber = string | number;
+let sample: StringOrNumber;
+sample = "A string value";
+console.log(`Sample: ${sample}`);
+sample = 100;
+console.log(`Sample: ${sample}`);
+
