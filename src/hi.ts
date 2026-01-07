@@ -166,3 +166,14 @@ let staffMember: Staff = {
     employeeId: 1234
 };
 console.log(staffMember);
+
+// step 21: demonstrate async/await
+async function fetchData(): Promise<string> {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Data fetched successfully!");
+        }
+        , 1000);
+    });
+}
+fetchData().then((data) => console.log(data));
