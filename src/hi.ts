@@ -177,3 +177,8 @@ async function fetchData(): Promise<string> {
     });
 }
 fetchData().then((data) => console.log(data));
+
+// step 22: demonstrate modules (this file can be imported in another TypeScript file)
+export const moduleMessage = "This is a module message.";
+console.log(moduleMessage);
+
